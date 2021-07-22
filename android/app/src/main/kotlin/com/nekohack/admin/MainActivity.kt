@@ -1,0 +1,6 @@
+package com.nekohack.admin
+
+import io.flutter.embedding.android.FlutterActivity
+
+class MainActivity: FlutterActivity() {
+}

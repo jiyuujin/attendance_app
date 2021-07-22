@@ -1,0 +1,25 @@
+# flutter packages pub run build_runner build
+
+targets:
+  $default:
+    builders:
+      gql_build|ast_builder:
+        enabled: true
+      gql_build|req_builder:
+        enabled: true
+        options:
+          schema: attendance_app|lib/third_party/attendance_app/schema.docs.graphql
+      gql_build|serializer_builder:
+        enabled: true
+        options:
+          schema: attendance_app|lib/third_party/attendance_app/schema.docs.graphql
+      gql_build|schema_builder:
+        enabled: true
+      gql_build|data_builder:
+        enabled: true
+        options:
+          schema: attendance_app|lib/third_party/attendance_app/schema.docs.graphql
+      gql_build|var_builder:
+        enabled: true
+        options:
+          schema: attendance_app|lib/third_party/attendance_app/schema.docs.graphql

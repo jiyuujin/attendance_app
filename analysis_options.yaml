@@ -1,0 +1,30 @@
+# You could lint your package like this:
+# dartanalyzer --options analysis_options.yaml .
+# flutter analyze
+
+# https://github.com/dart-lang/linter
+linter:
+  rules:
+    - annotate_overrides
+    - hash_and_equals
+    - prefer_double_quotes
+    - prefer_is_not_empty
+analyzer:
+  exclude:
+    - lib/generated_plugin_registrant.dart
+    - lib/src/github_gql/**
+    - lib/src/github_gql/github_queries.ast.gql.dart
+    - lib/src/github_gql/github_queries.data.gql.dart
+    - lib/src/github_gql/github_queries.data.gql.g.dart
+    - lib/src/github_gql/github_queries.graphql
+    - lib/src/github_gql/github_queries.req.gql.dart
+    - lib/src/github_gql/github_queries.req.gql.g.dart
+    - lib/src/github_gql/github_queries.var.gql.dart
+    - lib/src/github_gql/github_queries.var.gql.g.dart
+    - lib/third_party/github_graphql_schema/**
+    - lib/third_party/github_graphql_schema/schema.docs.ast.gql.dart
+    - lib/third_party/github_graphql_schema/schema.docs.graphql
+    - lib/third_party/github_graphql_schema/schema.docs.schema.gql.dart
+    - lib/third_party/github_graphql_schema/schema.docs.schema.gql.g.dart
+    - lib/third_party/github_graphql_schema/serializers.gql.dart
+    - lib/third_party/github_graphql_schema/serializers.gql.g.dart
